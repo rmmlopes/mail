@@ -56,9 +56,7 @@ export class SmtpDriver implements SmtpDriverContract {
   public convertHeadersToNodemailFormat(headers) {
     if (headers) {
       var newHeaders = {}
-      console.log(headers)
       for (var header of headers) {
-        console.log(header)
         for (var headerKey in header) {
           if (!newHeaders[headerKey]) {
             newHeaders[headerKey] = []
